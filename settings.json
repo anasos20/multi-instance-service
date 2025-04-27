@@ -1,0 +1,27 @@
+{
+    "instance1": [
+      {
+        "id": "job1",
+        "interval": 1,
+        "message": "Hello from instance1 - job1"
+      },
+      {
+        "id": "job2",
+        "interval": 1,
+        "message": "Hello from instance1 - job2"
+      }
+    ],
+    "instance2": [
+      {
+        "id": "job3",
+        "interval": 1,
+        "message": "Hello from instance2 - job3"
+      },
+      {
+        "id": "job4",
+        "interval": 1,
+        "message": "Hello from instance2 - job4"
+      }
+    ]
+  }
+  
