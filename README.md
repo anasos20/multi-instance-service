@@ -7,24 +7,12 @@ Each **instance** from the JSON represents a **separate scheduler** managing mul
 
 ## 📁 Project Structure
 
-. ├── main.py ├── settings.json ├── README.md
-
-yaml
-Copy
-Edit
-
----
-
 ## ⚙️ Installation
 
 ```bash
 pip install fastapi uvicorn apscheduler
 🧩 Example settings.json
 Create a settings.json file like this:
-
-json
-Copy
-Edit
 {
   "instance1": [
     {
@@ -50,9 +38,6 @@ Edit
 Each key (like instance1, instance2) creates a scheduler instance, and each object under it defines a job.
 
 🚀 Running the Application
-bash
-Copy
-Edit
 uvicorn main:app --reload
 The application will load the settings.json on startup and create schedulers and jobs automatically.
 
