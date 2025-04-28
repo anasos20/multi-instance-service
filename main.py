@@ -54,6 +54,7 @@ def read_root():
 @app.get("/status")
 def get_status():
     return {
-        instance: [job.id for job in sched.get_jobs()]
-        for instance, sched in schedulers.items()
+        "status": "running",
+        "schedulers": list(schedulers.keys()),
+        "jobs_data": jobs_data
     }
